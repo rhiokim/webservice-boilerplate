@@ -1,4 +1,4 @@
-JSLIB_DIR=./www/js/lib
+JSLIB_DIR=./src/main/js/lib
 
 init:
 	git submodule update --init
