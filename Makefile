@@ -9,10 +9,16 @@ init:
 	cd ./modules/jquery/;make
 	cp ./modules/jquery/dist/* ${JSLIB_DIR}
 	cp ./modules/requirejs/require.js ${JSLIB_DIR}
+
+build:
+	cp -R ./src/main/* ./www
+
+preview:
+	cd ./www;python -m SimpleHTTPServer ${2}
+	open -a "Google Chrome" http://localhost:${2}
 	
 release:
 	rm -f ./History.md
 	git changelog
-	
 
-.PHONY: init clean release
+.PHONY: init clean release build 
