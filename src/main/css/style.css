@@ -1,0 +1,151 @@
+/*
+	Main Layout
+*/
+@import url(bootstrap.css);
+
+/*---------------------------------
+	Heading
+-----------------------------------*/
+body {
+	padding-top: 100px;
+}
+.navbar-inner {
+	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+  	background-color: #2c2c2c;
+  	background: none;
+  	-webkit-border-radius: 4px;
+  	-moz-border-radius: 4px;
+  	border-radius: 4px;
+  	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  	box-shadow: none;
+}
+.navbar-inner .container {
+	position: relative;
+	bottom: 0;
+	width: 800px;
+	height: 50px;
+	padding: 10px 0;
+	background-color: #222;
+	-webkit-border-radius: 0 0 5px 5px;
+  	-moz-border-radius: 0 0 5px 5px;
+  	border-radius: 0 0 5px 5px;
+  	opacity: .8;
+}
+.navbar .brand {
+	position: absolute;
+	top: -1000em;
+}
+.navbar .button {
+	display: inline-block;
+	padding: .5em;
+	font: bold 2.2em/1em verdana, san-serif;
+	text-decoration: none;
+	color: #fff;
+	background: none;
+	cursor: pointer;
+}
+.navbar .btn-prev {
+	border-right: 1px solid #555;
+	background-color: #0088CC;
+}
+.navbar  .drop-down {
+	background-color: #222;
+	height: 100%;
+	width: 100%;
+}
+.navbar .dropdown-elems {
+	width: 810px;
+	margin: 0 auto;
+	*zoom: 1;
+}
+.navbar .dropdown-elems:before, .navbar .dropdown-elems:after {
+  display: table;
+  content: "";
+}
+.navbar .dropdown-elems:after {
+  clear: both;
+}
+.navbar .dropdown-elems li {
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 30px;
+	/* background-color: #fff;*/
+	list-style-type: none;
+	/*border-radius: 50em;
+	opacity: .8;*/
+}
+.navbar .dropdown-elems a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 200px;
+	font: bold 2.2em/1em verdana, san-serif;
+	text-align: center;
+	color: #666;
+}
+#nav .btn-add {
+	margin-top: -5px;
+}
+#nav .btn-okCancel {
+	display: none;
+	position: relative;
+	margin-left: 5px;
+	font: bold 2em/1em verdana, san-serif;
+	top: 10px;
+	left: 5px;
+}
+#nav .selected-item {
+	padding-left: 10px;
+}
+.collapse {
+	width: 800px;
+	margin: 0 auto;
+	background-color: #0088CC;
+	-webkit-border-radius: 0 0 5px 5px;
+  	-moz-border-radius: 0 0 5px 5px;
+  	border-radius: 0 0 5px 5px;
+}
+
+
+/*---------------------------------
+	Content
+-----------------------------------*/
+a { 
+	color: #666;
+}
+a:hover {
+	text-decoration: none;
+}
+.initial-elems {
+	width: 100%;
+	margin: 40px auto;
+}
+.elem1 {
+	display: inline-block;
+	width: 45%;
+	padding: 5em 0;
+	font: bold 2.2em/1em verdana, san-serif;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+.modal {
+	padding: 30px;
+	text-algn: center;
+}
+.navbar-fixed-bottom {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+}
+#nav-view li {
+	float: left;
+	width: 25%;
+}
