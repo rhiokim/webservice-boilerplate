@@ -1,4 +1,4 @@
-JSLIB_DIR=./www/js/lib
+JSLIB_DIR=./src/main/js/lib
 
 init:
 	git submodule update --init
@@ -9,10 +9,17 @@ init:
 	cd ./modules/jquery/;make
 	cp ./modules/jquery/dist/* ${JSLIB_DIR}
 	cp ./modules/requirejs/require.js ${JSLIB_DIR}
+
+build:
+	git pull origin devel
+	cp -R ./src/main/* ./www
+
+preview:
+	cd ./src/main;python -m SimpleHTTPServer ${2}
+	open -a "Google Chrome" http://localhost:${2}
 	
 release:
 	rm -f ./History.md
 	git changelog
-	
 
-.PHONY: init clean release
+.PHONY: init clean release build 
