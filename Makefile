@@ -15,7 +15,7 @@ build:
 	cp -R ./src/main/* ./www
 
 preview:
-	cd ./www;python -m SimpleHTTPServer ${2}
+	cd ./src/main;python -m SimpleHTTPServer ${2}
 	open -a "Google Chrome" http://localhost:${2}
 	
 release:
