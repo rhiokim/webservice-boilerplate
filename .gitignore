@@ -1,5 +1,5 @@
 *.swp
 .idea
-modules
 *.iml
 .DS_Store
+_*
