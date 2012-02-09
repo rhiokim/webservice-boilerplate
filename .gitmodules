@@ -1,0 +1,9 @@
+[submodule "modules/bootstrap"]
+	path = modules/bootstrap
+	url = https://github.com/twitter/bootstrap.git
+[submodule "modules/jquery"]
+	path = modules/jquery
+	url = https://github.com/jquery/jquery.git
+[submodule "modules/requirejs"]
+	path = modules/requirejs
+	url = https://github.com/jrburke/requirejs.git
