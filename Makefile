@@ -10,5 +10,9 @@ init:
 	cp ./modules/jquery/dist/* ${JSLIB_DIR}
 	cp ./modules/requirejs/require.js ${JSLIB_DIR}
 	
+release:
+	rm -f ./History.md
+	git changelog
+	
 
-.PHONY: init clean 
+.PHONY: init clean release
