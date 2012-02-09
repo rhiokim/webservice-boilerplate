@@ -11,6 +11,7 @@ init:
 	cp ./modules/requirejs/require.js ${JSLIB_DIR}
 
 build:
+	git pull origin devel
 	cp -R ./src/main/* ./www
 
 preview:
